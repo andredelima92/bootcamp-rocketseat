@@ -2,16 +2,22 @@ const express = require("express");
 
 const app = express();
 
+app.use(express.json());
+
 app.get("/projects", (req, res) => {
-  return res.json(["Projeto 1", "Projeto 2"]);
+  const query = req.query;
+
+  return res.json(query);
 });
 
 app.post("/projects", (req, res) => {
-  return res.json(["Projeto 1", "Projeto 2", "Projeto 3"]);
+  return res.json(req.body);
 });
 
 app.put("/projects/:id", (req, res) => {
-  return res.json(["Projeto 4", "Projeto 2", "Projeto 3"]);
+  const params = req.params;
+
+  return res.json(params);
 });
 
 app.delete("/projects/:id", (req, res) => {
