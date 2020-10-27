@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import Header from "./components/Header";
 
+import "./App.css";
+import backgroundImage from "./assets/background.jpg";
+
 function App() {
   const [projects, setProjects] = useState([
     "Desenvolvimento de app",
@@ -16,6 +19,8 @@ function App() {
   return (
     <>
       <Header title="Aqui é meu titulo" />
+
+      <img width="300" src={backgroundImage} alt="Background Image" />
 
       <ul>
         {projects.map((project, index) => (
