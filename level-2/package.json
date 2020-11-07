@@ -9,7 +9,10 @@
     "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
   },
   "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
     "@types/express": "^4.17.8",
+    "@types/jsonwebtoken": "^8.5.0",
+    "@types/multer": "^1.4.4",
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^6.15.0",
     "eslint-import-resolver-typescript": "^2.3.0",
@@ -20,9 +23,12 @@
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^4.6.1",
+    "bcryptjs": "^2.4.3",
     "date-fns": "^2.16.1",
     "eslint-config-airbnb-base": "^14.2.0",
     "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "multer": "^1.4.2",
     "pg": "^8.4.2",
     "reflect-metadata": "^0.1.13",
     "typeorm": "^0.2.29",
